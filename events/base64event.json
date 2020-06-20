@@ -1,0 +1,44 @@
+{
+    "version": "2.0",
+    "routeKey": "POST /submit",
+    "rawPath": "/Prod/submit",
+    "rawQueryString": "",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-US,en;q=0.9,he;q=0.8",
+        "content-length": "1280",
+        "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryW8DYvA3DBuvpBLk2",
+        "host": "xxxxxxxxx.execute-api.eu-west-1.amazonaws.com",
+        "origin": "https://ziniman.com",
+        "referer": "https://www.abc.com/contact/",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "cross-site",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36",
+        "x-amzn-trace-id": "Root=1-5edea83b-ff74efd2362101ee7535a0d4",
+        "x-forwarded-for": "109.85.219.20",
+        "x-forwarded-port": "443",
+        "x-forwarded-proto": "https"
+    },
+    "requestContext": {
+        "accountId": "300000000000",
+        "apiId": "9wodidi5wb",
+        "domainName": "xxxxxxxxx.execute-api.eu-west-1.amazonaws.com",
+        "domainPrefix": "xxxxxxxxx",
+        "http": {
+            "method": "POST",
+            "path": "/Prod/submit",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "109.85.219.20",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+        },
+        "requestId": "OHO5WgQdjoEEP9w=",
+        "routeKey": "POST /submit",
+        "stage": "Prod",
+        "time": "14/Jun/2020:10:13:15 +0000",
+        "timeEpoch": 1592129595231
+    },
+    "body": "LS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5VzhEWXZBM0RCdXZwQkxrMg0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJfd3BjZjciDQoNCjQ4NTcNCi0tLS0tLVdlYktpdEZvcm1Cb3VuZGFyeVc4RFl2QTNEQnV2cEJMazINCkNvbnRlbnQtRGlzcG9zaXRpb246IGZvcm0tZGF0YTsgbmFtZT0iX3dwY2Y3X3ZlcnNpb24iDQoNCjUuMS45DQotLS0tLS1XZWJLaXRGb3JtQm91bmRhcnlXOERZdkEzREJ1dnBCTGsyDQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9Il93cGNmN19sb2NhbGUiDQoNCmhlX0lMDQotLS0tLS1XZWJLaXRGb3JtQm91bmRhcnlXOERZdkEzREJ1dnBCTGsyDQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9Il93cGNmN191bml0X3RhZyINCg0Kd3BjZjctZjQ4NTctcDM1NjAtbzENCi0tLS0tLVdlYktpdEZvcm1Cb3VuZGFyeVc4RFl2QTNEQnV2cEJMazINCkNvbnRlbnQtRGlzcG9zaXRpb246IGZvcm0tZGF0YTsgbmFtZT0iX3dwY2Y3X2NvbnRhaW5lcl9wb3N0Ig0KDQozNTYwDQotLS0tLS1XZWJLaXRGb3JtQm91bmRhcnlXOERZdkEzREJ1dnBCTGsyDQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InlvdXItbmFtZSINCg0KVGVzdA0KLS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5VzhEWXZBM0RCdXZwQkxrMg0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJ5b3VyLWVtYWlsIg0KDQp0ZXN0QHRlc3QuY29tDQotLS0tLS1XZWJLaXRGb3JtQm91bmRhcnlXOERZdkEzREJ1dnBCTGsyDQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9Il9tYzR3cF9zdWJzY3JpYmVfY29udGFjdC1mb3JtLTciDQoNCjANCi0tLS0tLVdlYktpdEZvcm1Cb3VuZGFyeVc4RFl2QTNEQnV2cEJMazINCkNvbnRlbnQtRGlzcG9zaXRpb246IGZvcm0tZGF0YTsgbmFtZT0ieW91ci1zdWJqZWN0Ig0KDQpUZXN0IGVtYWlsDQotLS0tLS1XZWJLaXRGb3JtQm91bmRhcnlXOERZdkEzREJ1dnBCTGsyDQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InlvdXItbWVzc2FnZSINCg0KVGhpcyBpcyB0aGUgZW1haWwgYm9keQ0KLS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5VzhEWXZBM0RCdXZwQkxrMg0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJ3cHNzIg0KDQoNCi0tLS0tLVdlYktpdEZvcm1Cb3VuZGFyeVc4RFl2QTNEQnV2cEJMazItLQ0K",
+    "isBase64Encoded": true
+}

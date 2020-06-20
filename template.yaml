@@ -1,0 +1,71 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  wp-serverless-submit
+
+  A simple API, backed by AWS Lambda, to receive form submissions from WordPress, using the WP Serverless Forms plugin and process them.
+
+Globals:
+  Function:
+    Timeout: 10
+
+Resources:
+
+  GetDataHttpAPI:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: Prod
+      CorsConfiguration:
+        AllowOrigins:
+          - "http://wp.ziniman.com"
+          - "https://ziniman.com"
+        AllowHeaders:
+          - x-apigateway-header
+        AllowMethods:
+          - GET
+          - POST
+        MaxAge: 600
+
+  ReadDataFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: code/
+      Handler: read.lambda_handler
+      Runtime: python3.8
+      Events:
+        ReadData:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref GetDataHttpAPI
+            Path: /submit
+            Method: post
+            TimeoutInMillis: 15000
+            PayloadFormatVersion: "2.0"
+            RouteSettings:
+              ThrottlingBurstLimit: 15
+              ThrottlingRateLimit : 10
+      Policies:
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action:
+                - 'ses:SendEmail'
+              Resource: '*'
+      Environment:
+        Variables:
+          AllowedDomains: 'AQICAHjIeZpJMaiWTJGPKRQpD2mq8vh17kPlJUSAwksJvcQfKQHfQmiWEus314dna5+AUYtDAAAAiDCBhQYJKoZIhvcNAQcGoHgwdgIBADBxBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDJ4KHO4171Ru+t3gPgIBEIBE70SmsScoZ2ifds42Qv9sGgp0n+aVHRFZMutOAC+m06MvgOLz4Pu/2KO2b2b+vF0/kC1b0r62+K529yx4AoyOshw70vQ='
+          Recipient: 'AQICAHjIeZpJMaiWTJGPKRQpD2mq8vh17kPlJUSAwksJvcQfKQH4v3ke2NXMvlHwp5oK46W7AAAAbjBsBgkqhkiG9w0BBwagXzBdAgEAMFgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMui934k0gTecywzT7AgEQgCtYf4RiGXqBKrgn6JSwkxq8q3rSTbayjVWI2c8jVR88xSsvBc5azOoy4f+1'
+
+Outputs:
+  # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
+  # Find out more about other implicit resources you can reference within SAM
+  # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
+  GetDataHttpApiURL:
+    Description: "API Gateway endpoint URL for Prod stage for ReadData function"
+    Value: !Sub "https://${GetDataHttpAPI}.execute-api.${AWS::Region}.amazonaws.com/Prod/submit"
+  ReadDataFunction:
+    Description: "ReadData Lambda Function ARN"
+    Value: !GetAtt ReadDataFunction.Arn
+  ReadDataFunctionIamRole:
+    Description: "Implicit IAM Role created for ReadData function"
+    Value: !GetAtt ReadDataFunctionRole.Arn

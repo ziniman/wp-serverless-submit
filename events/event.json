@@ -1,0 +1,137 @@
+{
+    "resource": "/submit",
+    "path": "/submit/",
+    "httpMethod": "POST",
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US,en;q=0.9,he;q=0.8",
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-Country": "IL",
+        "content-type": "multipart/form-data; boundary=----WebKitFormBoundarylojnnF0hsXW8DZPi",
+        "Host": "4fwwr866k4.execute-api.eu-west-1.amazonaws.com",
+        "origin": "http://wp.ziniman.com",
+        "Referer": "http://wp.ziniman.com/contact/",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "cross-site",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36",
+        "Via": "2.0 d5d5fbb221d1e1e64574f5113ce6ed5c.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "MZ5MboryF5oCxT1VPB8QY_kRQYC3zZVDnjkWQB8LW8qpueydnxXv8Q==",
+        "X-Amzn-Trace-Id": "Root=1-5ee1e316-50cb891688948cc4ed7ee82d",
+        "X-Forwarded-For": "109.65.229.205, 130.176.1.141",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+        "Accept": [
+            "*/*"
+        ],
+        "Accept-Encoding": [
+            "gzip, deflate, br"
+        ],
+        "Accept-Language": [
+            "en-US,en;q=0.9,he;q=0.8"
+        ],
+        "CloudFront-Forwarded-Proto": [
+            "https"
+        ],
+        "CloudFront-Is-Desktop-Viewer": [
+            "true"
+        ],
+        "CloudFront-Is-Mobile-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-SmartTV-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-Tablet-Viewer": [
+            "false"
+        ],
+        "CloudFront-Viewer-Country": [
+            "IL"
+        ],
+        "content-type": [
+            "multipart/form-data; boundary=----WebKitFormBoundarylojnnF0hsXW8DZPi"
+        ],
+        "Host": [
+            "4fwwr866k4.execute-api.eu-west-1.amazonaws.com"
+        ],
+        "origin": [
+            "http://wp.ziniman.com"
+        ],
+        "Referer": [
+            "http://wp.ziniman.com/contact/"
+        ],
+        "sec-fetch-dest": [
+            "empty"
+        ],
+        "sec-fetch-mode": [
+            "cors"
+        ],
+        "sec-fetch-site": [
+            "cross-site"
+        ],
+        "User-Agent": [
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+        ],
+        "Via": [
+            "2.0 d5d5fbb221d1e1e64574f5113ce6ed5c.cloudfront.net (CloudFront)"
+        ],
+        "X-Amz-Cf-Id": [
+            "MZ5MboryF5oCxT1VPB8QY_kRQYC3zZVDnjkWQB8LW8qpueydnxXv8Q=="
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-5ee1e316-50cb891688948cc4ed7ee82d"
+        ],
+        "X-Forwarded-For": [
+            "109.65.229.205, 130.176.1.141"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "lt8rgy",
+        "resourcePath": "/submit",
+        "httpMethod": "POST",
+        "extendedRequestId": "N9BriFVeDoEF1Aw=",
+        "requestTime": "11/Jun/2020:07:53:58 +0000",
+        "path": "/Prod/submit/",
+        "accountId": "397652707012",
+        "protocol": "HTTP/1.1",
+        "stage": "Prod",
+        "domainPrefix": "4fwwr866k4",
+        "requestTimeEpoch": 1591862038580,
+        "requestId": "52b21003-0f14-40fd-9ea5-ab427265ba6f",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "109.65.229.205",
+            "principalOrgId": null,
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36",
+            "user": null
+        },
+        "domainName": "4fwwr866k4.execute-api.eu-west-1.amazonaws.com",
+        "apiId": "4fwwr866k4"
+    },
+    "body": "------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"_wpcf7\"\r\n\r\n4857\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"_wpcf7_version\"\r\n\r\n5.1.9\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"_wpcf7_locale\"\r\n\r\nhe_IL\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"_wpcf7_unit_tag\"\r\n\r\nwpcf7-f4857-p3560-o1\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"_wpcf7_container_post\"\r\n\r\n3560\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"your-name\"\r\n\r\nMy name is...\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"your-email\"\r\n\r\nmyname@myname.com\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"_mc4wp_subscribe_contact-form-7\"\r\n\r\n0\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"your-subject\"\r\n\r\nTest Subject\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"your-message\"\r\n\r\nEmail body\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi\r\nContent-Disposition: form-data; name=\"wpss\"\r\n\r\n\r\n------WebKitFormBoundarylojnnF0hsXW8DZPi--\r\n",
+    "isBase64Encoded": false
+}
