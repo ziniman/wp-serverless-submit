@@ -50,6 +50,8 @@ aws kms create-key --description wpss
 ```
 Get the "KeyId"
 
+Add permission to the new key (Customer managed keys)
+
 ```
 aws kms encrypt --key-id [KeyId] --plaintext "[SOME_TEXT]" --query CiphertextBlob --output text
 ```
